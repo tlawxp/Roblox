@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #e6e6fa;
+}
+
+[class=content] {
+  background-color: #0c0e1d;
+  padding: 20px 30px;
+  width: 500px;
+  margin: auto;
+}
+[class=content] [class=navbar] {
+  background-color: #0c0e1d;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+  align-items: center;
+}
+[class=content] [class=navbar] [class=logo] {
+  color: #e6e6fa;
+  font-size: 1.3em;
+}
+[class=content] [class=navbar] ul {
+  display: flex;
+}
+[class=content] [class=navbar] ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+[class=content] [class=navbar] ul li a {
+  display: inline-block;
+  color: #e6e6fa;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+[class=content] [class=navbar] ul li a:hover {
+  text-decoration: underline;
+}
+[class=content] [class=tentang] {
+  margin-top: 50px;
+}
+[class=content] [class=tentang] [class=img] {
+  width: 400px;
+  height: 200px;
+  border: 2px solid #fff;
+  background-image: url(../../img/roblox.webp);
+  background-size: cover;
+  margin: auto;
+  border-radius: 10px;
+}
+[class=content] [class=tentang] p {
+  margin-top: 20px;
+}
+[class=content] [class=robux] {
+  margin-top: 50px;
+}
+[class=content] [class=robux] ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  border: 1px solid #000;
+  width: 380px;
+  margin-top: 20px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+[class=content] [class=robux] ul li {
+  list-style: none;
+  margin: 10px;
+  border: 2px solid #000;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 20px 20px;
+}
+[class=content] [class=robux] ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  padding-right: 50px;
+  display: inline-block;
+  color: #e6e6fa;
+  border-bottom: 2px solid #000;
+}
+[class=content] [class=robux] ul li a svg {
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 10px;
+}
+[class=content] [class=footer] {
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
