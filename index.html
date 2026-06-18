@@ -1,317 +1,131 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/sass/css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no"
+    />
+    <title>RobuxTopup Pro | Top Up Robux & Roblox</title>
+    <!-- Font Awesome 6 untuk ikon profesional -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="content">
-      <div class="navbar">
-        <div class="logo">TlawXp</div>
-        <ul>
-          <li><a href="#">Tentang</a></li>
-          <li><a href="#">Robux</a></li>
-          <li><a href="#">Footer</a></li>
-        </ul>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo"><i class="fas fa-robot"></i> RobuxPro</div>
+      <nav>
+        <a href="#" class="active"><i class="fas fa-home"></i> Beranda</a>
+        <a href="#harga"><i class="fas fa-coins"></i> Harga Robux</a>
+        <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+        <a href="#" id="darkModeSidebar"
+          ><i class="fas fa-moon"></i> Dark Mode</a
+        >
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content" id="mainContent">
+      <!-- NAVBAR -->
+      <header class="navbar">
+        <button class="menu-burger" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="logo"><i class="fas fa-gamepad"></i> RobuxTopup</div>
+        <div class="nav-actions">
+          <button class="dark-toggle" id="darkToggle" title="Dark Mode">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Top Up Robux Cepat & Aman</h1>
+          <p>Harga termurah, proses instan, pembayaran via WhatsApp.</p>
+          <button class="btn-primary" onclick="scrollToHarga()">
+            <i class="fas fa-bolt"></i> Beli Sekarang
+          </button>
+        </div>
+        <div>
+          <i class="fas fa-ghost" style="font-size: 5rem; opacity: 0.9"></i>
+        </div>
+      </section>
+
+      <!-- DAFTAR HARGA -->
+      <h2 class="section-title" id="harga">
+        <i class="fas fa-tags"></i> Pilihan Robux
+      </h2>
+      <div class="price-grid" id="priceContainer">
+        <!-- diisi dinamis oleh js -->
       </div>
-      <div class="tentang">
-        <div class="img"></div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
-          facilis alias blanditiis rem aliquam commodi adipisci fugit reiciendis
-          magni. Atque quia deleniti inventore nihil hic odit quod perferendis
-          et dolorem?
-        </p>
-      </div>
-      <div class="robux">
-        <h2>Robux</h2>
-        <ul>
-          <li>
-            <a href="#"
-              >100
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 16.000
-          </li>
-          <li>
-            <a href="#"
-              >300
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 67.000
-          </li>
-          <li>
-            <a href="#"
-              >1000
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 160.000
-          </li>
-          <li>
-            <a href="#"
-              >100
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 16.000
-          </li>
-          <li>
-            <a href="#"
-              >100
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 16.000
-          </li>
-          <li>
-            <a href="#"
-              >100
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 16.000
-          </li>
-          <li>
-            <a href="#"
-              >100
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 16.000
-          </li>
-          <li>
-            <a href="#"
-              >100
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 16.000
-          </li>
-          <li>
-            <a href="#"
-              >100
-              <svg
-                viewBox="0 -0.23095815491140392 24.000874817762764 26.591916309822807"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-              >
-                <linearGradient
-                  id="a"
-                  gradientTransform="matrix(24 0 0 -26.1 531 1665.03)"
-                  gradientUnits="userSpaceOnUse"
-                  x1="-21.63"
-                  x2="-21.63"
-                  y1="63.75"
-                  y2="62.78"
-                >
-                  <stop offset="0" stop-color="#eedfa2" />
-                  <stop offset=".59" stop-color="#a9935a" />
-                  <stop offset="1" stop-color="#fee3a5" />
-                </linearGradient>
-                <path
-                  d="M21.4 4.62a5.2 5.2 0 0 1 2.6 4.5V17a5.19 5.19 0 0 1-2.6 4.5l-6.8 3.93a5.19 5.19 0 0 1-5.2 0l-6.8-3.95A5.19 5.19 0 0 1 0 17V9.12a5.2 5.2 0 0 1 2.6-4.5L9.4.7a5.19 5.19 0 0 1 5.2 0zM10.31 2.48L3.69 6.31A3.35 3.35 0 0 0 2 9.23v7.65a3.36 3.36 0 0 0 1.69 2.92l6.62 3.83a3.4 3.4 0 0 0 3.38 0l6.62-3.83A3.36 3.36 0 0 0 22 16.88V9.23a3.35 3.35 0 0 0-1.69-2.92l-6.62-3.83a3.4 3.4 0 0 0-3.38 0zm3.08 2.14l5.22 3A2.78 2.78 0 0 1 20 10v6a2.76 2.76 0 0 1-1.39 2.4l-5.22 3a2.76 2.76 0 0 1-2.78 0l-5.22-3A2.76 2.76 0 0 1 4 16.07V10a2.78 2.78 0 0 1 1.39-2.37l5.22-3a2.76 2.76 0 0 1 2.78 0zM9 16.05h6v-6H9z"
-                  fill="url(#a)"
-                />
-              </svg>
-            </a>
-            Rp. 16.000
-          </li>
-        </ul>
+      <div style="display: flex; justify-content: center; margin: 1rem 0 2rem">
+        <button
+          id="loadMoreBtn"
+          class="btn-primary"
+          style="
+            background: var(--surface);
+            color: var(--text);
+            border: 1px solid var(--border);
+          "
+        >
+          <i class="fas fa-chevron-down"></i> Load More
+        </button>
       </div>
 
-      <div class="footer">
-        <div class="medsos">
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
+      <!-- ABOUT -->
+      <div class="about-section" id="about">
+        <h2><i class="fas fa-shield-alt"></i> Tentang Kami</h2>
+        <p style="margin-top: 0.8rem; color: var(--text-secondary)">
+          RobuxTopup adalah platform top up Roblox terpercaya sejak 2024. Kami
+          menjamin keamanan transaksi dan pengiriman instan. Dukungan pelanggan
+          24/7 melalui WhatsApp.
+        </p>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>
+          © 2026 RobuxTopup Pro. All rights reserved.
+          <i class="fas fa-heart" style="color: var(--primary)"></i>
+        </p>
+        <p style="margin-top: 0.4rem">
+          Hubungi kami: <strong>+62 838-3512-1071</strong>
+        </p>
+      </footer>
+    </div>
+
+    <!-- MODAL DETAIL PRODUK -->
+    <div class="modal" id="productModal">
+      <div class="modal-content">
+        <h3 id="modalTitle" style="margin-bottom: 1rem">Detail Robux</h3>
+        <p id="modalDesc" style="color: var(--text-secondary)"></p>
+        <p style="font-weight: bold; margin: 0.8rem 0" id="modalPrice"></p>
+        <div style="display: flex; gap: 0.8rem; justify-content: flex-end">
+          <button
+            onclick="closeModal()"
+            style="
+              background: gray;
+              border: none;
+              color: white;
+              padding: 0.6rem 1.2rem;
+              border-radius: 20px;
+            "
+          >
+            Tutup
+          </button>
+          <button id="modalWhatsAppBtn" class="btn-primary">
+            <i class="fab fa-whatsapp"></i> Beli via WA
+          </button>
         </div>
-        <div class="copyright">Di buat oleh TlawXp</div>
       </div>
     </div>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
